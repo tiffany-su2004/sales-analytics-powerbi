@@ -1,63 +1,70 @@
 🧼📊 Sales Analytics – Python Data Cleaning + Power BI Executive Dashboard
 
-This project demonstrates a complete end-to-end analytics workflow — starting from a messy raw sales dataset, cleaning it using Python, and building a multi-page Power BI dashboard that delivers executive-level insights into sales performance, profit trends, product contribution, and customer behavior.
+This project demonstrates a complete end-to-end analytics workflow: starting from a messy raw sales dataset, cleaning and transforming it using Python, and building a multi-page Power BI dashboard that delivers executive-level insights into sales, profit, product performance, and customer behavior.
 
-🚀 Overview
+The final deliverable is a polished business intelligence solution that reflects real-world BI practice across data cleaning, modeling, visualization, and analytical storytelling.
 
-The goal of this project is to transform unstructured sales data into a polished analytical report that supports business decision-making.
+🚀 Project Overview
+
+The goal of this project is to convert raw, inconsistent sales data into a clean, structured dataset and an interactive analytical dashboard designed for business decision-makers.
+
 The workflow includes:
 
-Cleaning and preprocessing the raw data in Python
+Cleaning and preprocessing the dataset in Python
 
-Exporting a clean dataset for analytics
+Exporting a clean dataset for BI usage
 
-Designing an interactive Power BI dashboard
+Designing a multi-page Power BI dashboard
 
-Visualizing key KPIs and deep-dive analytics
+Creating KPI summaries, visual analytics, and drill-down insights
 
-This project reflects real-world BI and data analysis practices used in industry.
+Applying consistent UI/UX styling across all pages
 
 🧹 Data Cleaning (Python)
 
-Notebook:
-➡️ notebooks/data_cleaning.ipynb
+Notebook: notebooks/data_cleaning.ipynb
+Cleaned dataset: data/cleaned_sales.csv
 
-The raw dataset contained issues such as:
+The raw dataset contained:
 
 Missing values
 
-Encoding errors
+Inconsistent numeric formats
 
 Incorrect data types
 
-Inconsistent number formats
+Currency values stored as text
 
-Unstructured date fields
+Mixed-format dates
 
-Using Pandas, I performed:
+Duplicates and invalid rows
 
-Dataset import and preview
+Using Pandas and NumPy, the cleaning steps included:
 
-Data type correction
+Import and schema inspection
 
-Missing value handling
+Type correction for dates, numbers, and categorical fields
 
-Cleaning currency & numeric fields
+Handling missing and invalid values
 
-Renaming and formatting columns
+Cleaning and converting currency fields
 
-Detecting invalid or duplicate records
+Renaming columns for consistency
 
-Exporting the cleaned dataset for Power BI
+Removing duplicates
 
-The cleaned dataset used in the dashboard:
-➡️ data/cleaned_sales.csv
+Exporting a clean dataset ready for Power BI
+
+The cleaned dataset is the single source of truth for all Power BI visuals.
 
 📊 Power BI Dashboard
 
-The dashboard is designed for business users and contains multiple pages, each focused on a different analytical domain.
+The dashboard is designed with a consistent dark-theme UI, focusing on clarity, interactivity, and executive readability.
+It is structured across three analytical pages, each with a distinct purpose.
 
-1️⃣ Executive Overview
+🔷 Page 1 — Retail Sales Overview
+
+A high-level executive snapshot of the business, including:
 
 Total Sales
 
@@ -73,44 +80,55 @@ Sales by Product Line
 
 Top Customers
 
-Time-based sales trend
+Time-based sales trend (year, month, day)
 
-2️⃣ Analytics Page
+Interactive slicers for Year and Country
 
-Sales by Month
+This page is optimized for quick decision-making and stakeholder presentations.
+
+🔷 Page 2 — Detailed Analytics
+
+A deeper analysis of performance patterns over time, products, and customers:
+
+Sales trend by Month
 
 Profit by Product Line
 
-Year-over-Year Sales Trend
+Year-over-Year Sales comparison
 
-Profit vs Profit Margin comparison
+Profit vs Profit Margin % visualization
 
-Customer-level performance table
+Customer performance table (Sales & Profit)
 
-Product line contribution analysis
+Product line summary table (Sales, Profit, Margin %)
 
-3️⃣ AI Insights Page
+This page supports diagnosis, pattern discovery, and operational analysis.
 
-Key Influencers visual
+🔷 Page 3 — Contribution Analysis
 
-Top Segments
+A breakdown of the underlying drivers of sales performance using advanced visuals:
 
-Decomposition Tree with drill-downs
+Waterfall Chart (Total Sales contribution by Product Line)
 
-Country-level breakdown
+Sales by Country (bar chart)
 
-Dashboard file (zipped for GitHub):
-➡️ dashboard/SalesDashboard.pbix.zip
+Treemap (Country × Product Line contribution)
 
+Interactive drill-downs using slicers
 
+Replaces earlier AI visuals (Key Influencers, Decomposition Tree) for better design and clarity
+
+This page showcases contribution patterns and highlights key sales drivers.
 
 🛠 Tools & Technologies
 
-Python (Google Colab)
+Python
 
 Pandas
 
 NumPy
+
+Google Colab
 
 Power BI
 
@@ -118,12 +136,35 @@ Data modeling
 
 DAX measures
 
-AI visuals (Key Influencers, Decomposition Tree)
+KPI visuals
 
-Slicers & drill-down interactions
+Waterfall charts
 
-GitHub
+Bar and line charts
 
-Version control
+Treemap
 
-Project documentation
+Slicers & drill-through interactions
+
+Custom layout design (PowerPoint background)
+
+Other Tools
+
+PowerPoint (dashboard background design)
+
+GitHub for version control and documentation
+
+
+🎯 Key Outcomes
+
+Built a fully interactive, business-grade analytics dashboard
+
+Cleaned and modeled raw data for BI usage
+
+Identified top-performing countries, products, and customers
+
+Analyzed monthly and yearly sales patterns
+
+Designed a polished, visually consistent UI/UX across all pages
+
+Demonstrated an end-to-end BI workflow used in real industry projects
